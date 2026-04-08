@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominggo Adventus Pega Loy</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <a href="#home">Home</a>
+    <a href="#tentang saya">Tentang Saya</a>
+    <a href="#profil">Profil</a>
+    <a href="#hobi">Hobi</a>
+    <a href="#skill">Skill</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container">
+
+    <div id="home" class="section">
+      <h1 align="center">Selamat Datang!</h1>
+      <p>Hai! Selamat datang di halaman saya. Ini website profil <span class="highlight">mahasiswa</span> yang baru saya buat. Untuk mengetahui lebih lanjut tentang saya, silahkan klik <a href="#tentang saya">disini</a>.</p>
+    </div>
+
+    <div id="tentang saya" class="section">
+  <h2>Tentang Saya</h2>
+  <p>
+    Saya adalah mahasiswa informatika yang memiliki minat dalam dunia teknologi, 
+    khususnya di bidang <span class="highlight">web development</span> dan <span class="highlight">musik production</span>.
+    Saya memiliki pengetahuan dalam <span class="highlight">HTML, CSS, dan JavaScript</span>, serta 
+    pengalaman dalam <span class="highlight">editing audio</span> dan <span class="highlight">mixing & mastering audio</span>.
+    Saya juga memiliki ketertarikan dalam <span class="highlight">game development</span> dan <span class="highlight">web development</span>.
+    Saya angkatan 2024 dan saat ini sedang menempuh pendidikan di <span class="highlight">Universitas Sarjanawiyata Tamansiswa</span>.
+    Dan sejauh ini saya masih belajar tentang <span class="highlight">web development</span> dan <span class="highlight">musik production</span>. sambil menjalani hobi <span class="highlight">main game</span> dan <span class="highlight">ngeband</span>.
+    Saya juga pengen IT ini bisa jadi <span class="highlight">pekerjaan</span> saya di masa depan. Dan saya juga pengen IT ini bisa jadi <span class="highlight">bisnis</span> saya di masa depan. Dan saya juga suka ngulik plugin-plugin yang ada di <span class="highlight">FL Studio</span</span>.
+  </p>
+</div>
+
+    <div id="profil" class="section">
+    <div class="profil-container">
+    
+    <img src="img/DOM AGIK.jpeg" class="foto-profil">
+
+    <h2>Profil</h2>
+
+    <p>Nama: <span class="bold"> <span class="highlight">Dominggo Adventus Pega Loy</span></p>
+    <p>Asal: <span class="bold"> <span class="highlight">Putussibau, Kalimantan Barat</span></p>
+    <p>Jurusan: <span class="bold"> <span class="highlight">Informatika</p>
+    <p>Universitas: <span class="bold"> <span class="highlight">Universitas Sarjanawiyata Tamansiswa</span></p>
+
+  </div>
+</div>
+
+  <div id="hobi" class="section">
+
+  <h2 align="center">Hobi</h2>
+
+  <div class="hobi-container">
+
+    <div class="hobi-card">
+      <img src="img/Gitar.jpeg" alt="Main Gitar">
+      <h3>Ngeband</h3>
+    </div>
+
+    <div class="hobi-card">
+      <img src="img/Gaming.jpg" alt="Main Game">
+      <h3>Main Game</h3>
+    </div>
+
+    <div class="hobi-card">
+      <img src="img/Coding.jpg" alt="Ngoding">
+      <h3>Ngoding</h3>
+    </div>
+
+  </div>
+
+</div>
+
+  <div id="skill" class="section">
+    <h2 h3>Skill</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript Dasar</li>
+      <li>Editing Audio (FL Studio / dll)</li>
+      <li>Mixing & Mastering Audio (FL Studio / dll)</li>
+
+    </ul>
+  </div>
+
+    <div id="kontak" class="section">
+      <h2>Kontak</h2>
+      Anda dapat menghubungi saya melalui media sosial di bawah ini
+      <ul><il> Instagram: <a href="https://www.instagram.com/advnts._/">@advnts._</a></il> <ul><il> Email:        <a href="https://mail.google.com/mail/u/0/#inbox">@dominggoadvend@gmail.com</a></il>
+      
+      <ul><il> Kunjungi kampus saya <a href="https://ft.ustjogja.ac.id//">(Universitas Sarjanawiyata Tamansiswa)</a></ul>
+        <h2 align="center">Kirim Pesan di bawah yee!</h2>
+
+      <form>
+        <label>Nama:</label>
+        <input type="text" placeholder="Masukkan nama">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Masukkan email">
+
+        <label>Pesan:</label>
+        <textarea rows="4" placeholder="Tulis pesan..."></textarea>
+
+        <button type="submit">Kirim</a></button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2026 Dominggo Adventus Pega Loy. All rights reserved.</p>
+  </div>
+
+
+
+  <!-- js -->
+<script>
+  const sections = document.querySelectorAll('.section');
+  const navLinks = document.querySelectorAll('nav a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      const sectionHeight = section.clientHeight;
+
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+      current = sections[sections.length - 1].id;
+    }
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

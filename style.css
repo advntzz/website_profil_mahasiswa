@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  
+}
+
+nav a:hover,
+nav a.active {
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88,
+               0 0 20px #00ff88,
+               0 0 40px #00ff88;
+  transition: 0.3s;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #00ff88;
+  background: transparent;
+  color: #00ff88;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00ff88;
+  color: #000;
+}
+
+button:active {
+  background: #00ff88;
+  color: #000;
+  text-shadow: 0 0 10px #00ff88,
+               0 0 20px #00ff88,
+               0 0 40px #00ff88;
+  transition: 0.3s;
+}
+
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-top: 50px;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+#profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profil-container {
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.foto-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 2px solid #00ff88;
+  margin-bottom: 15px;
+}
+
+.profil-container p {
+  margin: 5px 0;
+}
+
+.profil-container:hover {
+  box-shadow: 0 0 25px rgba(0,255,136,0.2);
+  transition: 0.3s;
+}
+
+
+.hero h1 {
+  font-size: 160px;
+  line-height: 1.3;
+}
+
+.green {
+  color: #00ff88;
+}
+
+
+.typing {
+  font-size: 28px;
+  margin-top: 10px;
+  border-right: 2px solid #00ff88;
+  width: fit-content;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+p {
+  margin-top: 15px;
+  color: #aaa;
+}
+
+.hobi-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hobi-card {
+  width: 220px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 15px;
+
+  padding: 15px;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.hobi-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hobi-card h3 {
+  margin-top: 10px;
+}
+
+.hobi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0,255,136,0.2);
+}
+
+img {
+  width: 200px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #111;
+  color: white;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #00ff88;
+  background: transparent;
+  color: #00ff88;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #00ff88;
+  color: black;
+}
+
+.highlight {
+  color: #00ff88;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.nim {
+  color: #00ff88;
+}
+
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 2.0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#kontak {
+  padding-bottom: 150px;
+  line-height: 2.0;
+}
+
+.section {
+  padding-bottom: 90px;
+  text-align: left;
+  padding-top: 60px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hobi {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.hobi-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.hobi {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+}
