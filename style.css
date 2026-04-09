@@ -9,6 +9,7 @@ body {
   color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: clamp(14px, 2vw, 18px);
+  animation: fadeIn 1.5s ease-in;
 }
 
 html {
@@ -164,6 +165,17 @@ i {
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
